@@ -1,0 +1,134 @@
+.image {
+  object-fit: cover;
+}
+.countryGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.countryCard {
+  width: 10rem;
+  background-color: lightgrey;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  margin: 3%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.button {
+  border: none;
+  background-color: #ffff;
+  color: black;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  margin-bottom: 10%;
+}
+
+.deleteButton {
+  border: none;
+  background-color: rgb(167, 139, 143);
+  color: black;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.deleteButton:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.backButton {
+  display: inline-block;
+  height: 60%;
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+.backButton:hover {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  padding-left: 24px;
+  padding-right: 8px;
+}
+
+.backButton:after {
+  content: "\0000AB";
+  position: absolute;
+  opacity: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.backButton:hover:after {
+  opacity: 1;
+  left: 10px;
+}
+
+.editButton {
+  display: inline-block;
+  height: 60%;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #5ca1e1;
+  border: none;
+  color: black;
+  text-align: center;
+  padding: 0.5rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 12px;
+  margin-bottom: 10%;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+.editButton:hover {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.editButton:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.editButton:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.form {
+  background-color: white;
+  color: black;
+}
